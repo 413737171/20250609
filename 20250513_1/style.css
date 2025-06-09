@@ -1,0 +1,67 @@
+/* 設定整個視窗背景顏色為淺紅色 */
+body {
+    background-color: #FFD1D1; /* 淺紅色 */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* 掉落圓點動畫背景 canvas 設定 */
+#bg-dots-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* 中間淡黃色區域 */
+#app1 {
+    background-color: #FFFACD; /* 淡黃色 */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8); /* 陰影設定 */
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    position: relative;
+    z-index: 1;
+}
+
+/* 行內排列 */
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+/* 標籤與選單的文字大小 */
+label, select, button {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+/* 表格樣式 */
+table {
+    margin: 0 auto; /* 表格置中 */
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px; /* 表格內文字大小 */
+}
+
+th {
+    background-color: #f4f4f4;
+}
